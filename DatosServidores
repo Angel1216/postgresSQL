@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Jenkins
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*************************************************************
+jenkins       | 
+jenkins       | Jenkins initial setup is required. An admin user has been created and a password generated.
+jenkins       | Please use the following password to proceed to installation:
+jenkins       | 
+jenkins       | 473d96b38e124de9a54e947c82c99bc4
+jenkins       | 
+jenkins       | This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+jenkins       | 
+jenkins       | *************************************************************
+jenkins       | *************************************************************
+jenkins       | *************************************************************
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GitLab
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Personal Access Tokens
+You can generate a personal access token for each application you use that needs access to the GitLab API.
+You can also use personal access tokens to authenticate against Git over HTTP. They are the only accepted password when you have Two-Factor Authentication (2FA) enabled.
+
+Your New Personal Access Token
+- RboEBvx2kHXEVghBbdy7
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Postgres
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- POSTGRES_USER=      gitlab
+- POSTGRES_PASSWORD=  password
+- POSTGRES_DB=        gitlabhq_production
+
+psql -U gitlab gitlabhq_production
+
+
+URL: http://apuntes-snicoper.readthedocs.io/es/latest/programacion/postgresql/comandos_consola_psql.html  (Comandos consola Postgres)
+URL: https://www.youtube.com/watch?v=XHD3cJWiicA  (Ejemplo Proyecto SpringBoot JPA-PostgreSQL)
+URL: http://javasampleapproach.com/spring-framework/use-spring-jpa-postgresql-spring-boot  (Ejemplo Proyecto SpringBoot JPA-PostgreSQL)
+
+
+http://localhost:5050/save
+http://localhost:5050/findall
+http://localhost:5050/findbyid/4
+http://localhost:5050/findbylastname?lastname=Smith
